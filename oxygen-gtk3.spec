@@ -1,15 +1,15 @@
-Name:		oxygen-gtk3
 Summary:	A port of the default KDE widget theme (Oxygen) to gtk3
-Version:	1.1.2
+Name:		oxygen-gtk3
+Version:	1.1.4
 Release:	1
-Source0:	ftp://ftp.kde.org/pub/kde/stable/oxygen-gtk3/%{version}/src/%{name}-%{version}.tar.bz2
-URL:		https://projects.kde.org/projects/playground/artwork/oxygen-gtk
 Group:		Graphical desktop/KDE
 License:	LGPLv2+
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.2.0
+Url:		https://projects.kde.org/projects/playground/artwork/oxygen-gtk
+Source0:	ftp://ftp.kde.org/pub/kde/stable/oxygen-gtk3/%{version}/src/%{name}-%{version}.tar.bz2
+BuildRequires:	cmake
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(dbus-glib-1)
-BuildRequires:	cmake
+BuildRequires:	pkgconfig(gtk+-3.0) >= 3.2.0
 Suggests:	oxygen-icon-theme
 Requires:	%{name}-engine = %{version}-%{release}
 
